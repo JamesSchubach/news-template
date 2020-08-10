@@ -1,14 +1,28 @@
 import React, { Component } from "react";
+import Header from "./header/header";
+import Footer from "./footer/footer";
 import { Jumbotron, Container, Row, Col, Card, Button } from "react-bootstrap";
 
-class Featured extends Component {
+class Category extends Component {
   state = {};
   render() {
     return (
-      <Jumbotron fluid>
+      <div id="category-root">
+        <Header />
+        <Jumbotron
+          fluid
+          style={{
+            backgroundSize: "cover",
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1596936328448-f5c810abcb12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')",
+          }}
+        >
+          <Container>
+            <h1>Category Title</h1>
+            <p>Concise description</p>
+          </Container>
+        </Jumbotron>
         <Container>
-          <h1>Featured Articles</h1>
-          <p>Articles we love.</p>
           <Row>
             <Col>
               <Card style={{ width: "18rem" }}>
@@ -120,9 +134,11 @@ class Featured extends Component {
             </Col>
           </Row>
         </Container>
-      </Jumbotron>
+
+        <Footer />
+      </div>
     );
   }
 }
 
-export default Featured;
+export default Category;

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import Featured from "./components/HomeLayout/Featured";
+import Browse from "./components/HomeLayout/Browse";
 
 {
   /* Main Page*/
@@ -28,7 +29,9 @@ class Main extends Component {
         <div className="filtered-area"></div>
 
         {/* Start Browse Area */}
-        <div className="browse-area"></div>
+        <div className="browse-area">
+          <Browse />
+        </div>
         <Footer />
       </div>
     );

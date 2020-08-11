@@ -39,8 +39,8 @@ class Header extends Component {
           </Nav>
           <Nav>
             <Nav.Link href="deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="memes">
-              Dank memes
+            <Nav.Link eventKey={2} href="/dashboard">
+              Dashboard
             </Nav.Link>
             <Button className="ml-2" href="/login" variant="primary">
               Login

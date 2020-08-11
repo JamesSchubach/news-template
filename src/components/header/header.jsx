@@ -1,5 +1,12 @@
 import React, { Component } from "react";
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from "react-bootstrap";
+import {
+  Navbar,
+  Nav,
+  NavItem,
+  NavDropdown,
+  MenuItem,
+  Button,
+} from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 class Header extends Component {
@@ -35,6 +42,9 @@ class Header extends Component {
             <Nav.Link eventKey={2} href="#memes">
               Dank memes
             </Nav.Link>
+            <Button className="ml-2" href="/login" variant="primary">
+              Login
+            </Button>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

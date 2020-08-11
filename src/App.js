@@ -9,6 +9,7 @@ import "./App.css";
 import Main from "./Main";
 import Article from "./components/Article";
 import Category from "./components/Category";
+import Login from "./components/Login";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
@@ -19,6 +20,7 @@ function App() {
         <Route exact path={`${process.env.PUBLIC_URL}/`} component={Main} />
         <Route path="/article" component={Article} />
         <Route path="/category" component={Category} />
+        <Route path="/login" component={Login} />
       </Switch>
     </BrowserRouter>
   );

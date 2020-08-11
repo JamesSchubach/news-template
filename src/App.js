@@ -10,6 +10,7 @@ import Main from "./Main";
 import Article from "./components/Article";
 import Category from "./components/Category";
 import Login from "./components/Login";
+import RouteNotFound from "./components/RouteNotFound";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/article" component={Article} />
         <Route path="/category" component={Category} />
         <Route path="/login" component={Login} />
+        <Route component={RouteNotFound} />
       </Switch>
     </BrowserRouter>
   );
